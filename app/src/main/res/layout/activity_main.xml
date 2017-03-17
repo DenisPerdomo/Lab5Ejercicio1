@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.denis.lab5ejercicio1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Intrumentos Musicales"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgGuitarra"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="?attr/colorButtonNormal"
+                    android:clickable="true"
+                    android:onClick="clickImage"
+                    android:padding="3dp"
+                    app:srcCompat="@drawable/guitarra" />
+
+                <ImageView
+                    android:id="@+id/imgGaita"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="?attr/colorButtonNormal"
+                    android:clickable="true"
+                    android:onClick="clickImage"
+                    app:srcCompat="@drawable/gaita" />
+
+                <ImageView
+                    android:id="@+id/imgPiano"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="?attr/colorButtonNormal"
+                    android:clickable="true"
+                    android:onClick="clickImage"
+                    app:srcCompat="@drawable/piano" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imgTrompeta"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="?attr/colorButtonNormal"
+                    android:clickable="true"
+                    android:onClick="clickImage"
+                    android:padding="3dp"
+                    app:srcCompat="@drawable/trompeta" />
+
+                <ImageView
+                    android:id="@+id/imgViolin"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="?attr/colorButtonNormal"
+                    android:clickable="true"
+                    android:onClick="clickImage"
+                    app:srcCompat="@drawable/violin" />
+
+                <ImageView
+                    android:id="@+id/imgBateria"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="?attr/colorButtonNormal"
+                    android:clickable="true"
+                    android:onClick="clickImage"
+                    app:srcCompat="@drawable/bateria" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp" />
+        </TableLayout>
+
+    </LinearLayout>
+</RelativeLayout>
